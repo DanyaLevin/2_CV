@@ -8,7 +8,7 @@ let itemsToExpand = [
     'exp-6-com-more',
     'exp-5-com-more', 'exp-5-ach-more',                   'exp-5-man-more',
     'exp-4-com-more', 'exp-4-ach-more', 'exp-4-cat-more', 'exp-4-man-more',
-    'exp-3-com-more', 'exp-3-ach-more', 'exp-3-cat-more', 'exp-3-man-more',
+    'exp-3-com-more',                   'exp-3-cat-more', 'exp-3-man-more',
     'exp-2-com-more', 'exp-2-ach-more', 'exp-2-cat-more', 'exp-2-man-more',
     'exp-1-com-more', 'exp-1-ach-more', 'exp-1-cat-more', 'exp-1-man-more',
 
@@ -80,7 +80,6 @@ toggleMore('exp-4-man', 'exp-4-man-more');
 
 toggleMore('exp-3-com', 'exp-3-com-more');
 toggleMore('exp-3-cat', 'exp-3-cat-more');
-toggleMore('exp-3-ach', 'exp-3-ach-more');
 toggleMore('exp-3-man', 'exp-3-man-more');
 
 toggleMore('exp-2-com', 'exp-2-com-more');
