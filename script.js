@@ -1,14 +1,18 @@
-// The following cunt enables "Expand All Fields" button
 
+
+
+
+
+// The following cunt enables "Expand All Fields" button
 let expandAllButton = document.getElementById('expand-all-button');
 
 let revertButton = document.getElementById('revert-button');
 
 let itemsToExpand = [
     'exp-6-com-more',
-    'exp-5-com-more', 'exp-5-ach-more',                   'exp-5-man-more',
+    'exp-5-com-more', 'exp-5-ach-more', 'exp-5-man-more',
     'exp-4-com-more', 'exp-4-ach-more', 'exp-4-cat-more', 'exp-4-man-more',
-    'exp-3-com-more',                   'exp-3-cat-more', 'exp-3-man-more',
+    'exp-3-com-more', 'exp-3-cat-more', 'exp-3-man-more',
     'exp-2-com-more', 'exp-2-ach-more', 'exp-2-cat-more', 'exp-2-man-more',
     'exp-1-com-more', 'exp-1-ach-more', 'exp-1-cat-more', 'exp-1-man-more',
 
@@ -47,7 +51,6 @@ function revert() {
 
 // The following cunt cycles through photos
 // Calling out the function is needed for photos to change from the first click
-
 nextPhoto();
 
 function nextPhoto () {
@@ -66,7 +69,6 @@ function nextPhoto () {
 
 
 // The following cunt allows expanding fields one by one
-
 toggleMore('exp-6-com', 'exp-6-com-more');
 
 toggleMore('exp-5-com', 'exp-5-com-more');

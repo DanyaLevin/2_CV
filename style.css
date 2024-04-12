@@ -26,7 +26,7 @@ h1, h2, a {
   color: rgba(75, 141, 203, 1);
 }
 
-/* The below ensures that nav links work accurately, given a fixed header */
+/* Ensures that nav links work accurately, given a fixed header */
 #exp-section::before, #edu-section::before, #training-section::before { 
   content: " ";
   display: block;
@@ -58,13 +58,9 @@ h1, h2, a {
   color: rgba(75, 141, 203, 1);
 }
 
-.print {
+.header-for-print {
   display: none;
   position: absolute;
-}
-
-.image-container img {
-  display: block;
 }
 
 button {
@@ -82,56 +78,17 @@ button {
   width: 100%;
 }
 
-.padding-right {
-  padding-right: 16px;
-}
-
-@media (pointer: coarse) {
-  body {
-    font-size: 100%;
-  }
-  button {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    width: 13rem;
-  }
-  #exp-section a, #edu-section a, #training-section a, nav a {
-    font-weight: bold;
-  }
-}
-
-@media print {
-  header {
-    display: none;
-  }
-  .no-print {
-    opacity: 0;
-    position: absolute;
-  }
-  .print {
-    display: block;
-  }
-}
-
-
-
-
-
-/* Header */
-
 
 
 
 
 header {
   background-color: white;
+  max-width: 59.375rem; /* Needs to be 95% of max width of the page, which is 62.5rem */
   min-width: 34.375rem;
-  /* The following line needs to be 95% of max width of the page, which is 62.5rem */
-  max-width: 59.375rem;
   position: fixed;
   top: 0rem;
-  /* Same for the below, but adding 0.25% so that the photo doesn't bypass the header upon scrolling */
-  width: 95.25%;
+  width: 95.25%; /* Same here, but adding 0.25% so that the photo doesn't bypass the header upon scrolling */
   z-index: 5;
 }
   
@@ -160,16 +117,6 @@ nav a:hover {
   font-weight: bold;
 }
 
-#upper-hr {
-  margin-top: 0;
-}
-
-
-
-
-
-/* Introduction */
-
 
 
 
@@ -179,11 +126,11 @@ nav a:hover {
   grid-template-areas:  "intro-text intro-img"
                         "headline headline";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 18.75rem 4.375rem;
+  grid-template-rows: 18.75rem 3.5rem;
   position: relative;
 }
 
-#intro-section .intro-text {
+#intro-text {
   grid-area: intro-text;
   position: absolute;
   bottom: 0;
@@ -212,81 +159,9 @@ nav a:hover {
 
 
 
-/* Experience Section */
-
-
-
-
-
-#exp-section h3 {
+#exp-section h3, #edu-section h3, #training-section h3, #languages-section h3, #it-section h3 {
   margin: 0;
 }
-
-
-
-
-
-/* Education Section */
-
-
-
-
-
-#edu-section h3 {
-  margin: 0;
-}
-
-
-
-
-
-/* Further Training Section */
-
-
-
-
-
-#training-section h3 {
-  margin: 0;
-}
-
-
-
-
-
-/* Languages Training Section */
-
-
-
-
-
-#languages-section h3 {
-  margin: 0;
-}
-
-.margin-bottom {
-  margin-bottom: 16px;
-}
-
-
-
-
-
-/* IT Skills Section */
-
-
-
-
-
-#it-section h3 {
-  margin: 0;
-}
-
-
-
-
-
-/* Footer */
 
 
 
@@ -294,13 +169,64 @@ nav a:hover {
 
 footer {
   bottom: 0rem;
-  /* The following two lines need to be same as in the header */
-  width: 59.375rem;
   min-width: 34.375rem;
-  /* The following for some reason should remain at 100% */
-  width: 100%;
+  width: 59.375rem; /* Need to same as in the header */
+  width: 100%; /* For some reason needs to stay */
 }
 
 footer h3 {
   padding-bottom: 1rem;
+}
+
+
+
+
+
+@media (pointer: coarse) {
+  body {
+    font-size: 100%;
+  }
+  button {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    width: 13rem;
+  }
+  #exp-section a, #edu-section a, #training-section a, nav a {
+    font-weight: bold;
+  }
+}
+
+
+
+
+
+@media print {
+
+  .header-for-print {
+    display: block; /* This cunt is the only way to keep my name on top and only on first page  */
+  }
+
+  header {
+    display: none; /* This cunt is the only way to keep my name on top and only on first page  */
+  }
+
+  #intro-section {
+    grid-template-rows: 13.5rem 3.5rem; /* First number is the height of first row, second - second  */
+  }
+
+  #intro-text {
+    bottom: -4.75rem;
+  }
+
+  .to-be-expanded {
+    display: block !important;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  .padding-bottom {
+    padding-bottom: 1rem; /* This cunt is needed to harmonize space between elements, vertically */
+  }
 }
