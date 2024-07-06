@@ -55,12 +55,12 @@ nextPhoto();
 
 function nextPhoto () {
     let a = document.getElementById('intro-img');
-    if (a.innerHTML === '<img onclick="nextPhoto()" src="resources/Daniil_Levin_Photo_1.jpeg">') {
-        a.innerHTML = '<img onclick="nextPhoto()" src="resources/Daniil_Levin_Photo_2.png">';
-    } else if (a.innerHTML === '<img onclick="nextPhoto()" src="resources/Daniil_Levin_Photo_2.png">') {
-        a.innerHTML = '<img onclick="nextPhoto()" src="resources/Daniil_Levin_Photo_3.png">';
+    if (a.innerHTML === '<img onclick="nextPhoto()" src="../CV/public/resources/Daniil_Levin_Photo_1.jpeg">') {
+        a.innerHTML = '<img onclick="nextPhoto()" src="../CV/public/resources/Daniil_Levin_Photo_2.png">';
+    } else if (a.innerHTML === '<img onclick="nextPhoto()" src="../CV/public/resources/Daniil_Levin_Photo_2.png">') {
+        a.innerHTML = '<img onclick="nextPhoto()" src="../CV/public/resources/Daniil_Levin_Photo_3.png">';
     } else {
-        a.innerHTML = '<img onclick="nextPhoto()" src="resources/Daniil_Levin_Photo_1.jpeg">'; 
+        a.innerHTML = '<img onclick="nextPhoto()" src="../CV/public/resources/Daniil_Levin_Photo_1.jpeg">'; 
     };
 };
 
