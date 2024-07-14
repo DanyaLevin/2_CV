@@ -9,7 +9,7 @@ let expandAllButton = document.getElementById('expand-all-button');
 let revertButton = document.getElementById('revert-button');
 
 let itemsToExpand = [
-    'exp-6-com-more',
+    'exp-6-com-more', 'exp-6-ach-more',
     'exp-5-com-more', 'exp-5-ach-more', 'exp-5-man-more',
     'exp-4-com-more', 'exp-4-ach-more', 'exp-4-cat-more', 'exp-4-man-more',
     'exp-3-com-more', 'exp-3-cat-more', 'exp-3-man-more',
@@ -70,6 +70,7 @@ function nextPhoto () {
 
 // The following cunt allows expanding fields one by one
 toggleMore('exp-6-com', 'exp-6-com-more');
+toggleMore('exp-6-ach', 'exp-6-ach-more');
 
 toggleMore('exp-5-com', 'exp-5-com-more');
 toggleMore('exp-5-ach', 'exp-5-ach-more');
