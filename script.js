@@ -60,7 +60,7 @@ function nextPhoto () {
     } else if (a.innerHTML === '<img onclick="nextPhoto()" src="resources/Daniil_Levin_Photo_2.png">') {
         a.innerHTML = '<img onclick="nextPhoto()" src="resources/Daniil_Levin_Photo_3.png">';
     } else {
-        a.innerHTML = '<img onclick="nextPhoto()" src="resources/Daniil_Levin_Photo_1.jpeg">'; 
+        a.innerHTML = '<img onclick="nextPhoto()" src="resources/Daniil_Levin_Photo_1.jpeg">';
     };
 };
 
@@ -117,7 +117,7 @@ function toggleMore (a, b) {
     let d = document.getElementById(b);
     if (d.style.display === 'none') {
         d.style.display = 'block';
-    } else {     
+    } else {
         d.style.display = 'none';
     };
 };

@@ -27,7 +27,7 @@ h1, h2, a {
 }
 
 /* Ensures that nav links work accurately, given a fixed header */
-#exp-section::before, #edu-section::before, #training-section::before { 
+#exp-section::before, #edu-section::before, #training-section::before {
   content: " ";
   display: block;
   height: 4rem;
@@ -91,7 +91,7 @@ header {
   width: 95.25%; /* Same here, but adding 0.25% so that the photo doesn't bypass the header upon scrolling */
   z-index: 5;
 }
-  
+
 header .container {
   align-items: center;
   display: flex;
