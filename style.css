@@ -89,7 +89,7 @@ header {
   position: fixed;
   top: 0rem;
   width: 95.25%; /* Same here, but adding 0.25% so that the photo doesn't bypass the header upon scrolling */
-  z-index: 5;
+  z-index: 1;
 }
 
 header .container {
